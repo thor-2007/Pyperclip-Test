@@ -2,7 +2,7 @@ import pyperclip  # Importerer biblioteket for å kopiere til utklippstavlen
 
 # Spør antall Findus'er en ønsker.
 def main():
-    antall = int(input("Hvor mange Findus'er ønsker du? "))
+    antall = int(input("Hvor mange Findus'er ønsker du? (Skriv antall):"))
     skrivFinduser(antall)
 
 # Skriver alle Findus'ene.
@@ -20,7 +20,7 @@ def spør(output):
     svar = input("Har du lyst å kopiere? (ja/nei) ")  
     if svar == "ja":
         pyperclip.copy(output)  
-        print("\nFindus-rekken er kopiert! Prøv å lime den inn (Ctrl+V / Cmd+V).")
+        print("\nFindus-rekken er kopiert! Prøv å lime den inn (Ctrl+V).")
     else:
         print("Ok, ha en fin dag!")
 
